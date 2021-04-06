@@ -1,0 +1,87 @@
+<html>
+<head>
+	<style type="text/css">
+		body
+		{
+			background:gray;
+		}
+		h1
+		{
+			color:yellow;
+			font-style: bold;
+		}
+		#x
+		{
+			font-size: 30;
+			color:white;
+		}
+	</style>
+	<script type="text/javascript">
+		count=0;
+		function show()
+		{
+			switch(count)
+			{
+				case 0:
+				document.getElementById('i').src='1.jpg';
+				document.getElementById('x').innerHTML='Khajuraho';
+				count++;
+				break;
+				case 1:
+				document.getElementById('i').src='2.jpg';
+				document.getElementById('x').innerHTML='Gwalior';
+				count++;
+				break;
+				case 2:
+				document.getElementById('i').src='3.jpg';
+				document.getElementById('x').innerHTML='Bhopal';
+				count++;
+				break;
+				case 3:
+				document.getElementById('i').src='4.jpg';
+				document.getElementById('x').innerHTML='Orchcha';
+				count++;
+				break;
+				case 4:
+				document.getElementById('i').src='5.jpg';
+				document.getElementById('x').innerHTML='Mandu';
+				count++;
+				break;
+				case 5:
+				document.getElementById('i').src='6.jpg';
+				document.getElementById('x').innerHTML='Ujjain';
+				count++;
+				break;
+				case 6:
+				document.getElementById('i').src='7.jpg';
+				document.getElementById('x').innerHTML='Sanchi';
+				count++;
+				break;
+				case 7:
+				document.getElementById('i').src='8.jpg';
+				document.getElementById('x').innerHTML='Chitrakoot';
+				count++;
+				break;
+				case 8:
+				document.getElementById('i').src='9.jpg';
+				document.getElementById('x').innerHTML='Kanha National Park';
+				count++;
+				break;
+				case 9:
+				document.getElementById('i').src='10.jpg';
+				document.getElementById('x').innerHTML='Panna National Park';
+				count=0;
+				break;
+				}
+			setTimeout(show,1000);
+		}
+	</script>
+</head>
+<body onload="show()">
+  <center>
+  	<h1>  PLACES TO VISIT IN MADHYA PRADESH </h1>
+  	<img src="" width="500" height="500" id="i">
+  	<p id="x"> </p>
+  </center>
+</body>
+</html>
