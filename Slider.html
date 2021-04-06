@@ -1,0 +1,63 @@
+<html>
+<head>
+	<style type="text/css">
+		body
+		{
+			background: pink
+		}
+       #x
+       {
+       	font-size: 50;
+       	margin-top: 200;
+       }
+	</style>
+	<script type="text/javascript">
+		count=0;
+		function show()
+		{
+			if(count==0)
+			{
+				document.getElementById('x').innerHTML='The Purpose ';
+				document.getElementById('x').style.color='red';
+				document.getElementById('x').style.background='black';
+				count++;
+			}
+			else if(count==1)
+			{
+				document.getElementById('x').innerHTML='OF Our Lives ';
+				document.getElementById('x').style.color='yellow';
+				document.getElementById('x').style.background='black';
+				count++;
+			}
+			else if(count==2)
+			{
+				document.getElementById('x').innerHTML='Is TO Be';
+				document.getElementById('x').style.color='red';
+				document.getElementById('x').style.background='black';
+				count++;
+			}
+			else if(count==3)
+			{
+				document.getElementById('x').innerHTML='HAPPY';
+				document.getElementById('x').style.color='blue';
+				document.getElementById('x').style.background='black';
+				count++;
+			}
+			else
+			{
+				document.getElementById('x').innerHTML='In Every Situation :)';
+				document.getElementById('x').style.color='pink';
+				document.getElementById('x').style.background='black';
+				count=0;
+			}
+			setTimeout(show,1000);
+		}
+	</script>
+</head>
+<body onload="show()">
+	<center>
+		<p id="x"> </p>
+		<img src="demo.jpg">
+	</center>
+</body>
+</html>
