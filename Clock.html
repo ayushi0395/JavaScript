@@ -1,0 +1,72 @@
+<html>
+<head>
+	<style type="text/css">
+		body
+		{
+			background-color: black
+		}
+		p
+		{
+			text-align: center;
+			background-color: black;
+			color:red;
+			font-size: 40;
+            margin-top: 30px;
+		}
+		#dc
+		{
+			color:white;
+			font-style:italic;
+		}
+	</style>
+<script type="text/javascript">
+
+	function show()
+	{
+		d=new Date();
+
+        const months = ["January", "February", "March", "April", "May", "June", "July", "August","September", "October", "November", "December" ];
+
+        const days=["Sunday","Monday","Tuesday","Wednesday","Thrusday","Friday","Saturday"];
+        
+       document.getElementById('dc').innerHTML='DIGITAL  CLOCK';
+        document.getElementById('text').innerHTML='TIME ';
+        document.getElementById('dot').innerHTML=':';
+                         setTimeout(show,1000);
+		document.getElementById('h').innerHTML=d.getHours();
+		document.getElementById('m').innerHTML=d.getMinutes();
+		document.getElementById('s').innerHTML=d.getSeconds();
+
+		document.getElementById('date').innerHTML='DATE : ';
+		document.getElementById('d').innerHTML=d.getDate();
+		document.getElementById('mon').innerHTML=months[d.getMonth()];
+		document.getElementById('y').innerHTML=d.getFullYear();
+
+	    document.getElementById('dd').innerHTML='DAY :';
+		document.getElementById('day').innerHTML=days[d.getDay()];
+
+		setTimeout(show,1000);
+	}
+</script>
+</head>
+<body onload="show()">
+<center>
+	<p>
+		<font id="dc"></font>   <br><br><br>
+		<font id="text">  </font>
+		<font id="dot"></font>
+		<font id="h">   </font>     :
+		<font id="m">  </font>  :
+		<font id="s">  </font> <br><br>
+	
+		<font id="date"> </font>
+		<font id="d"> </font>  /
+		<font id="mon"></font> /
+		<font id="y"></font>
+	<br><br>
+		<font id="dd"></font>
+		<font id="day"></font>
+	</p>
+</center>
+	</body>
+</html>
